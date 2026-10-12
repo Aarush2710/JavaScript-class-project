@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 20px;">
+    
+
+    <h1>Student Details</h1>
+    <button onclick="studentDetalis()">Student Detalis</button>
+    <p id="name1"></p>
+    <p id="age"></p>
+    <p id="stu"></p>
+
+    <script>
+        var name = "Aarush";
+        var age = 10;
+        var student = true;
+
+        function studentDetalis(){
+            document.getElementById("name1").innerHTML = name
+            document.getElementById("age").innerHTML = age
+            document.getElementById("stu").innerHTML = student
+        }
+    </script>
+</body>
+</html>
