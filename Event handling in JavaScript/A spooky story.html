@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Basement</title>
+    <style>
+        body.dark {
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>The Basement</h1>
+    <p>I have to find my friend,He is hiding in the basement</p>
+    <button onclick="mood()">Get Into the mood</button>
+    <br>
+    <br>
+    <button onclick="clickbutton()">Do not click this button!!</button>
+    <audio src="phatphrogstudio-wendigo-horror-voice-angry-scream-growl-roar-583005.mp3" id="audio"></audio>
+    <img src="images.jpg" width="200" style="display: none;" id="image">
+
+
+    <br>
+    <br>
+
+    <button onclick="find()">Search</button>
+    <h2 id="earth"></h2>
+    <script>
+        function mood() {
+            document.body.className = "dark";
+        }
+
+        function clickbutton() {
+            document.getElementById("audio").play();
+
+            document.getElementById("image").style.display = "block";
+
+        }
+
+        function find() {
+            document.getElementById("earth").innerHTML = "So I carefully searched the damp dungeon. There you are! "
+        }
+
+
+    </script>
+</body>
+
+</html>
