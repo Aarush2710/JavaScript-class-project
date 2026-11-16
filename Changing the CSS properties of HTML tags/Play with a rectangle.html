@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play with a rectangle</title>
+    <style>
+        .square{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black ;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Make changes to the square</h1>
+    
+
+    <div class="square"></div>
+    <br>
+    <div>
+        <button onclick="circle()">Circle</button>
+        <button onclick="  hide()">Hide</button>
+        <button onclick="show()">Show</button>
+    </div>
+    <script>
+     let div = document.querySelector(".square"); 
+     
+     div.onmouseenter=function (){
+        div.style.background="red"
+     }
+
+      div.onmouseleave = function () {
+            div.style.background = "transparent"
+        }
+
+        function circle(){
+            div.style.borderRadius = "50%"
+        }
+
+        function show(){
+            div.style.display = "block";
+
+        }
+
+        function hide(){
+            div.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
